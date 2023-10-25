@@ -8,7 +8,7 @@ export const TheNavbar = () => {
     <Navbar className='row' bg="black" expand="lg">
       <Navbar.Brand className='col-2 text-white' href="#home">ComercioDummy</Navbar.Brand>
         <Nav className='col-9'>
-          <SearchForm/>
+   
         </Nav>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
