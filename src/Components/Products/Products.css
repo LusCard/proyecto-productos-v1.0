@@ -1,8 +1,9 @@
 
 .card-image {
   max-height: 200px;
+  min-height: 200px;
 }
 
 .card {
-  max-height: 400px;
+  height: 350px;
 }

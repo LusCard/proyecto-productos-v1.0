@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { CartIcon, ClearCartIcon } from '../Icons';
+import { CartIcon, ClearCartIcon } from '../../Components/Icons';
 import { useCart } from '../../hooks/useCart.js';
+import "./Cart.css"
 
 function CartItem({ thumbnail, price, title, quantity, addToCart }) {
     return (
@@ -32,7 +33,7 @@ export function Cart() {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        <CartIcon/>NewCart
+        <CartIcon/>
       </Button>
 
       <Offcanvas show={show}  placement='end' onHide={handleClose}>

@@ -9,8 +9,8 @@ export const NavSide = () => {
   const {isAuthenticated} = useAuth0()
   return (
     <>
-<aside className="col-2 side-nav" >
-      <div className='col side-bar text-white'>
+<aside className="col-2 side-nav mt-5" >
+      <div className='col side-bar text-light'>
         {isAuthenticated ? <Profile/> : <LoginButton/>} 
       </div>
       <hr />

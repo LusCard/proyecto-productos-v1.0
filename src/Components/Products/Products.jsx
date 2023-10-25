@@ -3,6 +3,7 @@ import { useCart } from '../../hooks/useCart.js';
 import { Card, Button } from 'react-bootstrap';
 import "./Products.css"
 import { Category } from '../Filters/Category.jsx';
+import { CreateProduct } from '../CreateProduct/CreateProduct.jsx';
 
 export function Products({ products }) {
   const { addToCart, removeFromCart, cart } = useCart();
@@ -17,9 +18,10 @@ export function Products({ products }) {
       <Category/>
       
       <div className="row">
+      <CreateProduct/>
         {products.slice(0, 10).map((product) => {
           const isProductInCart = checkProductInCart(product);
-
+          
           return (
             <div key={product.id} className="col-md-3 mb-4">
               <Card className='card' bg='dark' >

@@ -16,13 +16,13 @@ export const Category = () => {
   return (
     <Tabs defaultActiveKey="all" id="category-tabs" className="mb-3" onSelect={handleChangeCategory}>
       <Tab eventKey="all" title="Todas">
-        {/* Tab content for All */}
+
       </Tab>
-      <Tab eventKey="laptops" title="Portátiles">
-        {/* Tab content for Laptops */}
+      <Tab eventKey="laptops" title="Notebooks">
+
       </Tab>
       <Tab eventKey="smartphones" title="Celulares">
-        {/* Tab content for Smartphones */}
+
       </Tab>
     </Tabs>
   );
